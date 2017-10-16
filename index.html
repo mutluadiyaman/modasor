@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modasor</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo"></a>
+        <nav>
+        <ul class="nav">
+            <li class="active"><a href="">Mağazalar</a><i><!-- icon --></i>
+                <div class="hover-menu">
+                    <div class="category-box">
+                        <div class="cat-tab">
+                            <span class="cat-title">Kadın</span>
+                            <a href="" title="">Etek</a>
+                            <a href="" title="">İç Çamaşırı</a>
+                            <a href="" title="">Ceket</a>
+                            <a href="" title="">Giyim</a>
+                            <a href="" title="">Ayakkabı</a>
+                            <a href="" title="">Kozmetik</a>
+                            <a class="all-category">Tümünü Gör ></a>
+                        </div>
+
+                        <div class="cat-tab">
+                            <span class="cat-title">Erkek</span>
+                            <a href="" title="">Takım Elbise</a>
+                            <a href="" title="">Forma</a>
+                            <a href="" title="">Gömlek</a>
+                            <a href="" title="">Kol Düğmesi</a>
+                            <a href="" title="">Kravat</a>
+                            <a class="all-category">Tümünü Gör ></a>
+                        </div>
+
+                        <div class="cat-tab">
+                            <span class="cat-title">Çocuk</span>
+                            <a href="" title="">Gömlek</a>
+                            <a href="" title="">Ayakkabı</a>
+                            <a href="" title="">Hırka</a>
+                            <a href="" title="">Hırka</a>
+                            <a href="" title="">İç Çamaşırı</a>
+                            <a href="" title="">Pantalon</a>
+                            <a href="" title="">Pantalon</a>
+                            <a href="" title="">Elbise</a>
+                            <a class="all-category">Tümünü Gör ></a>
+                        </div>
+                    </div>
+                    <div class="brand-box">
+                        <div class="brand-tab">
+                            <span class="brand-title">Öne Çıkan Mağazalar</span>
+                            <div class="brand-image"></div>
+                            <div class="brand-image"></div>
+                        </div>
+
+                        <div class="brand-tab">
+                            <span class="brand-title">Son Eklenene Mağazalar</span>
+                            <div class="brand-image"></div>
+                            <div class="brand-image"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="">Blog</a></li>
+            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#loginModal">Giriş Yap</a></li>
+            <li><a href="">Üye Ol</a></li>
+
+        </ul>
+    </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="search-container">
+                    <p>Tüm  mağazalarda ara</p>
+                    <form action="category.html">
+                        <div class="searchbox">
+                            <div class="search-input col-lg-10 col-md-10 col-sm-10">
+                                <input type="text" name="search" placeholder="Online modayı tek noktada görün" />
+                            </div>
+                            <div class="search-button col-lg-2 col-md-2 col-sm-2">
+                                <button>Ara</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-area">
+        <div class="category-wrapper">
+            <div class="category-box">
+                <i  class="woman"></i>
+                <span class="category-name">Kadın</span>
+            </div>
+            <div class="category-box">
+                <i  class="man"></i>
+                <span class="category-name">Erkek</span>
+            </div>
+            <div class="category-box">
+                <i  class="brand"></i>
+                <span class="category-name">Markalar</span>
+            </div>
+            <div class="category-box">
+                <i  class="find"></i>
+                <span class="category-name">Keşfet</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="recommendation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="head-title">Sizin İçin Seçtiklerimiz</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net/mnresize/415/622//Assets/ProductImages/oa/69/850431/1/TCLAW18FV0040R29B187_1_org_zoom.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>Ng Style</h2>
+                                        <p>Boğazlı Kırmızı Elbise</p>
+                                        <strike>419,99 tl</strike> <price>124,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>Oxxo</h2>
+                                        <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                        <strike>419,99 tl</strike> <price>124,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>Dilvin</h2>
+                                        <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                        <price>54,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>İpekyol</h2>
+                                        <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                        <price>12.200,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net/mnresize/415/622//Assets/ProductImages/oa/69/850431/1/TCLAW18FV0040R29B187_1_org_zoom.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>2 Ng Style</h2>
+                                        <p>Boğazlı Kırmızı Elbise</p>
+                                        <strike>419,99 tl</strike> <price>124,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>2 Oxxo</h2>
+                                        <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                        <strike>419,99 tl</strike> <price>124,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>2 Dilvin</h2>
+                                        <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                        <price>54,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                                    <div class="productinfo">
+                                        <h2>2 İpekyol</h2>
+                                        <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                        <price>12.200,99</price>
+                                    </div>
+                                    <a href="">Detaylı İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                    <i class="slider-arrow-left"></i>
+                </a>
+                <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                    <i class="slider-arrow-right"></i>
+                </a>
+            </div>
+        </div><!--/recommended_items-->
+
+        </div>
+    </div>
+</section>
+
+<section class="deal-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="head-title"><b>Modayı</b> Yakından Takip Et</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="itembox">
+                    <img src="images/banner1.png">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="itembox">
+                    <img src="images/banner2.png">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="itembox">
+                    <img src="images/banner3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="popular-category">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="head-title">Popüler Kategoriler</h3>
+            </div>
+        </div>
+        <div class="row grid">
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-3.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-3.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-3.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/69/676297/3/T00401J6JT005_2_org.jpg" alt="" />
+                        <div class="productinfo">
+                            <h2>Abiye</h2>
+                            <p>En şık ve ucuz abiye modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-1.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Skechers</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-4.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-3.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <img src="images/populer-cat-2.png" alt="" />
+                        <div class="productinfo">
+                            <h2>Koton Elbise</h2>
+                            <p>En ucuz Skechers bayan aykkabı modelleri Modasor'da!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p class="seo-text">ModaSor, Türkiye'deki popüler özel alışveriş sitelerindeki fırsatları bir araya getirerek size eşsiz bir alışveriş deneyimi sunan bir servistir. Birbirinden şık ayakkabı modellerinden tutun, soğuk kış günlerinin olmazsa olmazı bot modelleri ve fiyatlarına, hatta yaz günlerinin vazgeçilmezlerinden terlik modellerine kadar birçok farklı çeşidi bir arada bulabilirsiniz.</p>
+                <a href="" class="all-read">Devamını Oku</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="partner-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="itembox">
+                    <img src="images/partner-banner1.png" height="148">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="itembox">
+                    <img src="images/partner-banner2.png"  height="94">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="itembox">
+                    <img src="images/partner-banner3.png"  height="103">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="itembox">
+                    <img src="images/partner-banner4.png" height="91">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-logo"></div>
+                <div class="copyright">
+                    &copy; 2017 Papermu, Tüm hakları saklıdır.
+                </div>
+                <div class="social-list">
+                    <ul>
+                        <li class="facebook"><a href=""></a></li>
+                        <li class="twitter"><a href=""></a></li>
+                        <li class="instagram"><a href=""></a></li>
+                        <li class="linkedin"><a href=""></a></li>
+                        <li class="rss"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/masonry.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#recommended-item-carousel').carousel({
+            interval: 10000
+        })
+
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item'
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

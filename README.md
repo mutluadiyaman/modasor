@@ -1,5 +1,5 @@
 # modasor
 
-main -> https://htmlpreview.github.io/?https://github.com/mutluadiyaman/modasor/blob/master/index.html
+<a href="https://htmlpreview.github.io/?https://github.com/mutluadiyaman/modasor/blob/master/index.html">main</a>
 
-category -> https://htmlpreview.github.io/?https://github.com/mutluadiyaman/modasor/blob/master/category.html
+<a href="https://htmlpreview.github.io/?https://github.com/mutluadiyaman/modasor/blob/master/category.html">category</a>

@@ -436,9 +436,9 @@ white-header{
                 ul.nav li > .hover-menu{
                     position: absolute;
                     top:60px;
-                    left: -370px;
+                    left: -390px;
                     display:none;
-                    width: 960px;
+                    width: 1000px;
                     height: 405px;
                     border-radius: 8px;
                     background-color: #ffffff;
@@ -546,7 +546,7 @@ white-header{
 
                     ul.nav li > .hover-menu .brand-box{
                         float:left;
-                        width: 450px;
+                        width: 490px;
                         padding: 40px 50px;
                     }
 
@@ -577,7 +577,7 @@ white-header{
                                 border-radius: 8px;
                                 background-color: #ffffff;
                                 box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
-                                margin-left: 20px;
+                                margin-left: 30px;
                                 cursor: pointer;
                             }
 
@@ -899,6 +899,7 @@ white-header{
         }
 
         .product-image-wrapper{
+            position: relative;
             height: 460px;
             background-color: #ffffff;
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -968,6 +969,28 @@ white-header{
         }
 
 
+        .favorite{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .favorite .passive-fav{
+            width: 37px;
+            height: 37px;
+            background: url('../images/passive-favourite.png') no-repeat 0 0
+        }
+
+        .favorite .active-fav{
+            width: 37px;
+            height: 37px;
+            background: url('../images/active-favourite.png') no-repeat 0 0
+        }
+
 .deal-banner{
     background-color: #fafafa;
     padding-bottom: 50px;
@@ -1001,7 +1024,7 @@ white-header{
     .popular-category .product-image-wrapper{
         width: 305px;
         height: auto;
-        margin: 10px;
+        margin: 13px;
     }
 
     .popular-category .product-image-wrapper .productinfo{
@@ -1279,7 +1302,7 @@ white-header{
     font-size: 14px;
     text-align: left;
     color: #999999;
-    width: 160px;
+    width: 150px;
     display: block;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1305,6 +1328,97 @@ white-header{
 
 .checkbox.active label{border:solid 1px #e0174a!important}
 .checkbox.active label:after{opacity:1}
+
+
+.custom-scroll{
+    max-height: 400px;
+    width: 105%;
+}
+
+.cat-item{
+    float:left;
+    width: 100%;
+    font-family: GothamRoundedMedium;
+    text-align: left;
+    color: #999999;
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.cat-item:nth-child(1){
+    margin-top:0;
+}
+
+.cat-item.active{
+    float:left;
+    color: #e0174a;
+    margin-left: 0;
+}
+
+.active .cat-arrow{
+    float:left;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7px 0 7px;
+    border-color: #e0174a transparent transparent transparent;
+    margin-top: 4px;
+}
+
+.cat-arrow{
+    float:left;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 6px;
+    border-color: transparent transparent transparent #999;
+}
+
+.cat-item span{
+    margin-left: 10px;
+    float:left;
+}
+
+
+.pagination-bar{
+    margin: 30px auto 0 auto;
+    width: 635px;
+}
+
+.pagination-bar .page-item{
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+    font-family: GothamRoundedMedium;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+}
+
+.pagination-bar .page-item:nth-child(1){
+    margin-left:0;
+}
+
+.pagination-bar .page-item.active{
+    color: #e0174a;
+}
+
+.pagination-bar .page-item:hover{
+    color: #e0174a;
+    background-color: #fafafa !important;
+}
+
+.pagination-bar .page-item.prev{
+    background: url('../images/prev-arrow.png') no-repeat center center;
+}
+.pagination-bar .page-item.next{
+    background: url('../images/go-arrow.png') no-repeat center center;
+}
 
 
 

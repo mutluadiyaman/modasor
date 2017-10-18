@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scrollbar.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -150,88 +151,126 @@
                 </div>
 
                 <div class="filter-wrapper">
+                    <p class="filter-title">Kategoriler</p>
+                    <div class="searchbox">
+                        <div class="cat-item active"><i class="cat-arrow"></i><span>Giyim</span></div>
+                        <div class="cat-item"><i class="cat-arrow"></i><span>Takım Elbise</span></div>
+                        <div class="cat-item"><i class="cat-arrow"></i><span>Tulum</span></div>
+                        <div class="cat-item"><i class="cat-arrow"></i><span>Elbise</span></div>
+                    </div>
+                </div>
+
+                <div class="filter-wrapper">
                     <p class="filter-title">Markalar</p>
                     <div class="searchbox scroll">
                         <p class="sub-title">Popüler Markalar</p>
-                        <div class="checkbox">
-                            <input id="Lacoste" type="checkbox">
-                            <label for="Lacoste"><span>Lacoste</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="Cumlaude" type="checkbox">
-                            <label for="Cumlaude"><span>Cumlaude Lab</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="LidyCool" type="checkbox">
-                            <label for="LidyCool"><span>LidyCool</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="Urania" type="checkbox">
-                            <label for="Urania"><span>Urania Gazelli</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="Mm6" type="checkbox">
-                            <label for="Mm6"><span>Mm6 Maison Martin Margiela</span></label>
-                        </div>
+                        <div class="scrollbar-inner custom-scroll">
+                            <div class="checkbox">
+                                <input id="Lacoste" type="checkbox">
+                                <label for="Lacoste"><span>Lacoste</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Cumlaude" type="checkbox">
+                                <label for="Cumlaude"><span>Cumlaude Lab</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="LidyCool" type="checkbox">
+                                <label for="LidyCool"><span>LidyCool</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Urania" type="checkbox">
+                                <label for="Urania"><span>Urania Gazelli</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Mm6" type="checkbox">
+                                <label for="Mm6"><span>Mm6 Maison Martin Margiela</span></label>
+                            </div>
+
                         <p class="sub-title">Tüm Markalar</p>
-                        <div class="checkbox">
-                        <input id="Lacoste" type="checkbox">
-                        <label for="Lacoste"><span>Lacoste</span></label>
-                    </div>
-                        <div class="checkbox">
-                            <input id="Cumlaude" type="checkbox">
-                            <label for="Cumlaude"><span>Cumlaude Lab</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="LidyCool" type="checkbox">
-                            <label for="LidyCool"><span>LidyCool</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="Urania" type="checkbox">
-                            <label for="Urania"><span>Urania Gazelli</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="Mm6" type="checkbox">
-                            <label for="Mm6"><span>Mm6 Maison Martin Margiela</span></label>
+                            <div class="checkbox">
+                                <input id="Bedava" type="checkbox">
+                                <label for="Bedava"><span>1 Alana 1 Bedava</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Lacoste" type="checkbox">
+                                <label for="Lacoste"><span>Lacoste</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Cumlaude" type="checkbox">
+                                <label for="Cumlaude"><span>Cumlaude Lab</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="LidyCool" type="checkbox">
+                                <label for="LidyCool"><span>LidyCool</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Urania" type="checkbox">
+                                <label for="Urania"><span>Urania Gazelli</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="Mm6" type="checkbox">
+                                <label for="Mm6"><span>Mm6 Maison Martin Margiela</span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="filter-wrapper">
                     <p class="filter-title">Renkler</p>
                     <div class="searchbox scroll">
-                        <div class="checkbox active">
-                            <input id="siyah" type="checkbox">
-                            <label for="siyah"><span>Siyah</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="beyaz" type="checkbox">
-                            <label for="beyaz"><span>Beyaz</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="mavi" type="checkbox">
-                            <label for="mavi"><span>Mavi</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="yesil" type="checkbox">
-                            <label for="yesil"><span>Yeşil</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="sari" type="checkbox">
-                            <label for="sari"><span>Sarı</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="bordo" type="checkbox">
-                            <label for="bordo"><span>Bordo</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="turuncu" type="checkbox">
-                            <label for="turuncu"><span>Turuncu</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <input id="ekru" type="checkbox">
-                            <label for="ekru"><span>Ekru</span></label>
+                        <div class="scrollbar-inner custom-scroll">
+                            <div class="checkbox active">
+                                <input id="siyah" type="checkbox">
+                                <label for="siyah"><span>Siyah</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="beyaz" type="checkbox">
+                                <label for="beyaz"><span>Beyaz</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="mavi" type="checkbox">
+                                <label for="mavi"><span>Mavi</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="yesil" type="checkbox">
+                                <label for="yesil"><span>Yeşil</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="sari" type="checkbox">
+                                <label for="sari"><span>Sarı</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="bordo" type="checkbox">
+                                <label for="bordo"><span>Bordo</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="turuncu" type="checkbox">
+                                <label for="turuncu"><span>Turuncu</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="ekru" type="checkbox">
+                                <label for="ekru"><span>Ekru</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="beyaz" type="checkbox">
+                                <label for="beyaz"><span>Beyaz</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="mavi" type="checkbox">
+                                <label for="mavi"><span>Mavi</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="yesil" type="checkbox">
+                                <label for="yesil"><span>Yeşil</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="sari" type="checkbox">
+                                <label for="sari"><span>Sarı</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="bordo" type="checkbox">
+                                <label for="bordo"><span>Bordo</span></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -287,6 +326,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Oxxo</h2>
@@ -300,6 +342,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Dilvin</h2>
@@ -313,6 +358,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 İpekyol</h2>
@@ -326,6 +374,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Oxxo</h2>
@@ -339,6 +390,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Dilvin</h2>
@@ -352,6 +406,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 İpekyol</h2>
@@ -365,6 +422,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Oxxo</h2>
@@ -378,6 +438,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Dilvin</h2>
@@ -391,6 +454,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 İpekyol</h2>
@@ -404,6 +470,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Oxxo</h2>
@@ -417,6 +486,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Dilvin</h2>
@@ -430,6 +502,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 İpekyol</h2>
@@ -443,6 +518,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Oxxo</h2>
@@ -456,6 +534,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 Dilvin</h2>
@@ -469,6 +550,9 @@
                 <div class="product-card-wrapper col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
                             <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
                             <div class="productinfo">
                                 <h2>2 İpekyol</h2>
@@ -478,6 +562,213 @@
                             <a href="">Detaylı İncele</a>
                         </div>
                     </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Oxxo</h2>
+                                <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                <strike>419,99 tl</strike> <price>124,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Dilvin</h2>
+                                <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                <price>54,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 İpekyol</h2>
+                                <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                <price>12.200,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Oxxo</h2>
+                                <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                <strike>419,99 tl</strike> <price>124,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Dilvin</h2>
+                                <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                <price>54,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 İpekyol</h2>
+                                <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                <price>12.200,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Oxxo</h2>
+                                <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                <strike>419,99 tl</strike> <price>124,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Dilvin</h2>
+                                <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                <price>54,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 İpekyol</h2>
+                                <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                <price>12.200,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/67/219615/2/1003142055103_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Oxxo</h2>
+                                <p class="text-ellipsis">Kadın Denim Yelek</p>
+                                <strike>419,99 tl</strike> <price>124,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="active-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/oa/68/640519/1/8680790362445_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 Dilvin</h2>
+                                <p class="text-ellipsis">Kadın Siyah Koları Büzgülü</p>
+                                <price>54,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper col-sm-4">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="favorite">
+                                <div class="passive-fav"></div>
+                            </div>
+                            <img src="https://trendyol.cubecdn.net//Assets/ProductImages/59247-2/8859097913050_1_org.jpg" alt="" />
+                            <div class="productinfo">
+                                <h2>2 İpekyol</h2>
+                                <p class="text-ellipsis">Kadın Ekru Elbise</p>
+                                <price>12.200,99</price>
+                            </div>
+                            <a href="">Detaylı İncele</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                <div class="pagination-bar">
+                    <div class="page-item prev"></div>
+                    <div class="page-item active">1</div>
+                    <div class="page-item">2</div>
+                    <div class="page-item">3</div>
+                    <div class="page-item">4</div>
+                    <div class="page-item">5</div>
+                    <div class="page-item">6</div>
+                    <div class="page-item">7</div>
+                    <div class="page-item">8</div>
+                    <div class="page-item next"></div>
+                </div>
                 </div>
             </div>
         </div>
@@ -512,7 +803,13 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
 
+<script>
+    jQuery(document).ready(function(){
+        jQuery('.scrollbar-inner').scrollbar();
+    });
+</script>
 
 </body>
 </html>

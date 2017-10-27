@@ -952,7 +952,7 @@ white-header{
             color: #e0174a;
             display: inline-block;
         }
-        .product-image-wrapper a{
+        .product-image-wrapper .single-products a.more{
             width: 100%;
             height: 54px;
             display: block;
@@ -1455,6 +1455,19 @@ footer .social-list{
 footer .social-list li{
     float:left;
     margin-left: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+}
+
+footer .social-list li:hover{
+    background: #fff;
+
+
+}
+footer .social-list li:hover i{
+    color: #000;
 }
 
 footer .social-list li:first-child{
@@ -1468,29 +1481,13 @@ footer .social-list li a{
     margin-bottom: 40px;
 }
 
-.facebook{
-    width: 39px;
-    height: 39px;
-    background: url('../images/facebook.png') no-repeat 0 0;
-}
-.twitter{
-    width: 39px;
-    height: 39px;
-    background: url('../images/twitter.png') no-repeat 0 0;
-}
-.instagram{
-    width: 40px;
-    height: 39px;
-    background: url('../images/instagram.png') no-repeat 0 0;
-}
-.linkedin{
-    width: 39px;
-    height: 39px;
-    background: url('../images/linkedin.png') no-repeat 0 0;
-}
-.rss{
-    width: 40px;
-    height: 40px;
-    background: url('../images/rss.png') no-repeat 0 0;
+footer .social-list li i {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top:9px;
 }
 
+footer .social-list li i:hover{
+    color: #000;
+}
